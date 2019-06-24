@@ -1,0 +1,11 @@
+<div class="container content">
+    <h2 class="text-center">Detalhes</h2>
+    <a class="btn btn-primary" [routerLink]="[ '/prato' ]" routerLinkActive="active">Voltar</a>
+
+    <h4>{{prato.idPrato}}</h4>
+    <p>{{prato.nomePrato}}</p>
+    <p>{{prato.preco}}</p>
+    <p>{{restaurante.nomeRestaurante}}</p>
+
+    <a [routerLink]="[ '/prato/delete', prato.idPrato]">Deletar</a>
+</div>

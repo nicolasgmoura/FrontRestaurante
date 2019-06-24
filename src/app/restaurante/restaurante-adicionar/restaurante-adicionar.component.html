@@ -1,0 +1,16 @@
+<div class="container content">
+  <h2 class="text-center">Adicionar</h2>
+
+  <form>
+    <div class="form-group">
+      <label for="Nome">Nome</label>
+      <input [(ngModel)]="restaurante.nomeRestaurante" type="text" class="form-control" id="restaurante"
+        placeholder="Nome do restaurante " [ngModelOptions]="{standalone: true}">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="insert()">Salvar</button>
+
+    <a  [routerLink]="['/restaurante']" class="btn bg-dark text-light">Cancelar</a>
+    
+  </form>
+</div>

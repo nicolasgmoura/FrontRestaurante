@@ -1,0 +1,14 @@
+<div class="container content">
+  <h2 class="text-center">Lista de restaurantes</h2>
+  <a class="btn link-app" [routerLink]="[ 'create' ]" routerLinkActive="active">Adicionar restaurante</a>
+
+  <div *ngFor="let item of list">
+    <p class="card-title">{{item.nomeRestaurante}}</p>
+
+    <a  [routerLink]="[ 'delete',item.idRestaurante ]"><i class="material-icons">delete_outline</i></a>
+    <a  [routerLink]="[ 'update',item.idRestaurante ]"><i class="material-icons">edit</i></a>
+  </div>
+
+
+ 
+ 

@@ -1,0 +1,11 @@
+<div class="container content">
+    <h2>Deseja realmente excluir esse registro?</h2>
+
+    <div class="prato">
+        <p class="card-title">{{restaurante.nomeRestaurante}}</p>
+    </div>
+
+    <button class="btn btn-block btn-delete" (click)="delete()"><i class="material-icons">delete</i> Deletar</button>
+    <a [routerLink]="['/restaurante']" class="btn btn-block btn-cancel"><i class="material-icons">close</i> Cancelar</a>
+
+</div>

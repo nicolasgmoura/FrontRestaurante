@@ -1,0 +1,30 @@
+<div class="container content">
+  <h2 class="text-center">Adicionar</h2>
+  
+  <form>
+    <div class="form-group">
+      <label for="Nome">Nome</label>
+      <input [(ngModel)]="prato.nomePrato" type="text" class="form-control" id="restaurante"
+        placeholder="Nome do prato " [ngModelOptions]="{standalone: true}">
+    </div>
+
+
+    <div class="form-group">
+      <label for="Nome">Preco</label>
+      <input [(ngModel)]="prato.preco" type="number" class="form-control" id="preco" placeholder="Preco do prato"
+        [ngModelOptions]="{standalone: true}">
+    </div>
+
+    <div class="form-group">
+      <label stacked>Restaurante</label>
+      <select [(ngModel)]="prato.idRestaurante" [ngModelOptions]="{standalone: true}" class="form-control">
+        <option *ngFor="let item of restaurantes" [value]="item.idRestaurante">
+          {{item.nomeRestaurante}}</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="insert()">Salvar</button>
+    <a  [routerLink]="['/prato']" class="btn bg-dark text-light">Cancelar</a>
+
+  </form>
+</div>

@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+.nav{
+    background-color: #C70039;
+    padding: 10px 0 
+}
+
+.intro-app{
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.intro-app img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.intro-app figcaption{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333
+}
+
+.form-control{
+    max-width: 375px;
+}
+
+.btn{
+    margin: 10px 15px 0 0
+}
+
+.content{
+    margin-top: 50px;
+    max-width: 375px;
+    margin: 25px auto;
+    padding: 30px 20px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px 
+}
+
+.content h2{
+    font-size: 22px;
+}
+
+.link-app{
+    background-color: #C70039;
+    color: #fff
+}
+
+.link-app:hover, .link-app:focus{
+    color: #f0f0f0;
+    opacity: .85;
+}
+
+.prato{
+    margin: 15px auto;
+    padding: 25px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 5px
+}
+
+.prato p{
+    font-size: 22px;
+}
+
+.prato span{
+    background: #C70039;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+.prato a{
+    color: #C70039;
+    margin: 0 10px 0 0;
+    float: right;
+}
+
+.btn-delete{
+    background: none;
+    border: 1px solid rgb(231, 60, 60);
+    color: #333
+}
+
+.btn-cancel{
+    background: #f0f0f0;
+    color: #333
+}
+
+.btn i{
+    vertical-align: text-top
+}
